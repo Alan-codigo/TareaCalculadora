@@ -3,6 +3,8 @@
 //FUNCION PARA OBTENER X
 function x(){
     //PEDIMOS EL VALOR DE X
+        //Funcion flecha    
+
     let x = prompt("Valor de x");
     //NUESTRO ID "x" EN HTML SERA IGUAL AL VALOR QUE NOS DIERON Y SE GUARDA COMO CARACTER
     document.getElementById("x").innerHTML = x;
@@ -25,7 +27,10 @@ function suma(){
     //HACEMOS QUE SE SUMEN EL VALOR UNO Y EL DOS
     // SE CONVIENTEN A NUMEROS CON EL PARSEINT
     // ENTONCES LO QUE TENEMOS EN ID "z" EN EL HTML SERA IGUAL A LA SUMA DE ESTOS DOS
-    document.getElementById("z").innerHTML = parseInt(valoruno,10) +parseInt(valordos,10);
+    document.getElementById("z").innerHTML = parseInt(valoruno,10) + parseInt(valordos,10);
+    let sum = (a, b) => a + b;
+    alert( sum(parseInt(valoruno,10),parseInt(valordos,10)) ); // 3
+
 }
 
 //HACEMOS LO MISMO CON LAS FUNCIONES QUE APARECEN ABAJO
